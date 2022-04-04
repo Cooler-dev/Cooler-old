@@ -1,0 +1,11 @@
+# 系统
+.DS_Store
+
+# Django
+migrations
+db.sqlite3
+
+# yarn与npm
+yarn.lock
+package-lock.json
+node_modules
