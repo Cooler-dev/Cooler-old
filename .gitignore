@@ -1,4 +1,4 @@
-# 系统
+# mac
 .DS_Store
 
 # Django #
@@ -13,7 +13,7 @@ media
 *.bak
 
 # If you are using PyCharm #
-.idea
+.idea/
 *.iws /out/
 
 # Python #
