@@ -2,7 +2,10 @@
 .DS_Store
 
 # Django
-migrations
+api/migrations
+meta/migrations
+posts/migrations
+__pycache__
 db.sqlite3
 
 # yarn与npm
