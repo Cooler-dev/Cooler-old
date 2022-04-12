@@ -1,0 +1,12 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% for posts in posts %}
+    <h2>{{ posts.name }}</h2>
+    <p>{{ posts.body }}</p>
+{% endfor %}
+</body>
+</html>

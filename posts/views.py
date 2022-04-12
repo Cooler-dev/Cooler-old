@@ -1,8 +1,7 @@
-from django.http import HttpResponse
-from meta.models import SiteMeta
+from django.shortcuts import render
+from posts.models import Post
 
 
 def home(request):
-    MetaTitle = SiteMeta.objects.all()
-    title = MetaTitle.get['title']
-    return HttpResponse(title)
+    posts=Post.objects.all()
+    return render(request, 'home.html', {'posts': posts})
