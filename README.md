@@ -1,5 +1,8 @@
 # Cooler
 各位参与Cooler早期开发的同学们注意，Cooler处于前期的不稳定状态，请勿公开源代码！  
+
+## 安装
+cooler目前仅支持docker安装，官方镜像在`redish101/cooler:alpha`，使用docker部署时的用户名和密码均为`admin`
 ## 目录结构解析
 懒得写了
 ## 代码风格要求
