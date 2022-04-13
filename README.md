@@ -6,7 +6,7 @@
 ### 源码部署（不推荐）
 从发行版下载源代码，在根目录执行:
 ```bash
-pip install django==3.2
+pip install -r requirements.txt
 python manage.py migrate
 ```
 然后使用此命令创建管理员账号：
