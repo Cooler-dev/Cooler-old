@@ -6,16 +6,16 @@ from meta.models import SiteMeta
 
 def home(request,):
     posts = Post.objects.all()
-    meta = SiteMeta.objects.all()
+    meta = SiteMeta.objects.get(id=1)
     context = {
         'posts': posts,
-        'meta': meta,
+        'title': meta.title
     }
     return render(request, 'home.html', context)
 
 
 def post(request, id):
-    meta = SiteMeta.objects.get()
+    meta = SiteMeta.objects.get(id=1)
     post = Post.objects.get(id=id)
     context = {
         'name': post.name,

@@ -1,45 +1,18 @@
 <html lang="zh">
-{% load static %}
 <head>
-    <meta charset="UTF-8">
-    <script src="/static/ckeditor/ckeditor/plugins/prism/prism/prism_patched.min.js"></script>
-    <link rel="stylesheet" href="{% static 'prism/prism.css' %}">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    {% include 'head.html' %}
 
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="{% static '/css/home.css' %}">
-
-    {% for meta in meta %}
-    <title>{{ meta.title }}</title>
-    {% endfor %}
+    <title>{{ title }}</title>
 </head>
 <body>
-    <div class="container-fluid nav">
-	    <div class="row-fluid">
-		    <div class="span12">
-			    <ul class="nav nav-tabs">
-				    <li class="active">
-					    <a href="/">首页</a>
-				    </li>
-				    <li>
-					    <a href="/admin">后台</a>
-				    </li>
-			    </ul>
-		    </div>
-	    </div>
-    </div>
+    {% include "header.html" %}
     {% for posts in posts %}
         <div class="main">
-            <h2>{{ posts.name }}</h2>
-            <p id="post">{{ posts.body | safe}}</p>
-            </br>
+            <a href="/p/{{ posts.id}}">
+                <h1>{{ posts.name }}</h2>
+                <p id="post">{{ posts.body | safe}}</p>
+            </a>
+            <hr>
         </div>
     {% endfor %}
 </body>
