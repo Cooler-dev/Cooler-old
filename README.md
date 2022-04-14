@@ -1,7 +1,7 @@
 # Cooler
 ## 部署
 ### docker部署（推荐）
-拉取镜像`ghcr.io/cooler-dev/cooler`，运行镜像。  
+拉取镜像`redish101/cooler`，运行镜像。  
 进入`你的ip/admin`登录后台，默认账号与密码均为`admin`，点击站点设置旁边的`修改`，选择第一项，填写站点的信息，保存。  
 
 ### 源码部署（不推荐）
@@ -40,3 +40,5 @@ D: 即doc，修改文档时使用
 ```text
 A: 增加了自动更新功能
 ```
+---
+©️Copyright Cooler-dev
