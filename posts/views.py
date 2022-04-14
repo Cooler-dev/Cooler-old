@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from posts.models import Post
 from meta.models import SiteMeta
-from django.http import HttpResponse
+
 
 
 def home(request,):
@@ -15,10 +15,11 @@ def home(request,):
 
 
 def post(request, id):
-    meta = SiteMeta.objects.all()
+    meta = SiteMeta.objects.get()
     post = Post.objects.get(id=id)
     context = {
         'name': post.name,
-        'body': post.body
+        'body': post.body,
+        'title': meta.title
     }
-    return render(request, post.html, context)
+    return render(request, 'post.html', context)

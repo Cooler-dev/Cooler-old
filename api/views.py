@@ -1,8 +1,8 @@
 from django.http import JsonResponse
 
+from api.models import Admin
 
-def author(request):
+def home(request):
     date = {
-        'name': 'demo'
+        'name': 'admin'
     }
-    return JsonResponse(date)

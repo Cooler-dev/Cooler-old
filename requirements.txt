@@ -1,3 +1,10 @@
-django==3.2.12
-markdown
-django-ckeditor
+asgiref==3.5.0
+Django==3.2.12
+django-ckeditor==6.3.2
+django-js-asset==2.0.0
+pytz==2022.1
+pywebio==1.6.0
+sqlparse==0.4.2
+tornado==6.1
+ua-parser==0.10.0
+user-agents==2.2.0

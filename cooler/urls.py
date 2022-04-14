@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import posts
+from install import views as install
+from pywebio.platform.django import webio_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('', include('posts.urls'))
+    path('', include('posts.urls')),
+    path('install/', webio_view(install.main))
 ]

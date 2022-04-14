@@ -2,7 +2,7 @@ from django.db import models
 
 
 class SiteMeta(models.Model):
-    title = models.CharField(default='Cooler站点', verbose_name='站点标题', max_length=10)
+    title = models.CharField(default='Cooler站点', verbose_name='站点标题', max_length=32)
     author = models.CharField(verbose_name='作者名称', max_length=10)
 
     class Meta(object):

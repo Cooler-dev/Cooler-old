@@ -1,2 +1,11 @@
-.nav{margin: 0px 100px;};
-body {margin: 0px 200px;};
+.nav{
+    margin: 5px 100px;
+}
+.main{
+    margin: 50px 200px;
+    font-size: 20px;
+}  
+.name{
+    margin: 50px 200px;
+    font-size: 45px;
+}

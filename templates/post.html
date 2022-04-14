@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-{% loadstatic %}
-<html>
-    <html lang="zh">
-        {% load static %}
+{% load static %}
+<html lang="zh">
         <head>
             <meta charset="UTF-8">
-            <script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
-            <link rel="stylesheet" href="{% static 'prism/prism.css' %}">
+            <script src="/static/ckeditor/ckeditor/plugins/prism/prism/prism_patched.min.js"></script>
+            <link rel="stylesheet" href="/static/prism/prism.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         
@@ -16,9 +15,30 @@
             <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         
-            <title>{{ meta.title }}</title>
+            <link rel="stylesheet" href="{% static '/css/home.css' %}">
+
+            <title>{{ name }} | {{ title }}</title>
         </head>
     <body>
-        
+        <div class="container-fluid nav">
+            <div class="row-fluid">
+                <div class="span12">
+                    <ul class="nav nav-tabs">
+                        <li>
+                            <a href="/">首页</a>
+                        </li>
+                        <li>
+                            <a href="/admin">后台</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="name">
+            {{ name }}
+        </h1>
+        <div class="main">
+            {{ body | safe }}
+        </div>
     </body>
 </html>
