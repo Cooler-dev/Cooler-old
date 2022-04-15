@@ -9,3 +9,6 @@
     margin: 50px 200px;
     font-size: 45px;
 }
+p {
+    word-wrap:break-word;
+}

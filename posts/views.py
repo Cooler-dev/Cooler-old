@@ -4,8 +4,8 @@ from meta.models import SiteMeta
 
 
 
-def home(request,):
-    posts = Post.objects.all().order_by('-body')
+def home(request):
+    posts = Post.objects.all().order_by('-id')
     meta = SiteMeta.objects.get(id=1)
     context = {
         'posts': posts,
