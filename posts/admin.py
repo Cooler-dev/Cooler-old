@@ -3,7 +3,7 @@ from posts.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['name']
+    list_display = ['id','title']
 
 
 admin.site.register(Post, PostAdmin)

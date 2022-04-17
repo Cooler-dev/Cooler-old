@@ -9,7 +9,7 @@
     {% for posts in posts %}
         <div class="main">
             <a href="/p/{{ posts.id}}">
-                <h1>{{ posts.name }}</h1>
+                <h1>{{ posts.title }}</h1>
             </a>
                 <p id="post">{{ posts.body | safe }}</p>
             <hr>

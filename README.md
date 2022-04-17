@@ -41,4 +41,4 @@ D: 即doc，修改文档时使用
 A: 增加了自动更新功能
 ```
 ---
-©️Copyright Cooler-dev
+©️Copyright 2022 Cooler-dev

@@ -9,7 +9,7 @@ def home(request):
     meta = SiteMeta.objects.get(id=1)
     context = {
         'posts': posts,
-        'title': meta.title
+        'meta': meta
     }
     return render(request, 'home.html', context)
 
