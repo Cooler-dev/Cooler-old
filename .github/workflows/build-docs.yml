@@ -2,7 +2,8 @@ name: Build Cooler docs
 
 on:
   push:
-    path: ['docs_src']
+    paths: 
+      - 'docs_src'
     
 
 jobs:
