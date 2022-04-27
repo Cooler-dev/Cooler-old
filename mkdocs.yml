@@ -10,5 +10,5 @@ repo_name: Cooler-dev/Cooler
 docs_dir: docs
 site_dir: public
 edit_uri: edit/main/docs/
-pages:
-  - ['index.md', '首页']
+nav :
+  - 首页: index.md
