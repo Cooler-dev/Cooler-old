@@ -2,6 +2,7 @@ name: Build Cooler docs
 
 on:
   push:
+    branches: ['main']
     paths: 
       - 'docs_src'
     
