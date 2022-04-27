@@ -7,8 +7,8 @@ theme:
   logo: assets/logo.svg
 repo_url: https://github.com/Cooler-dev/Cooler
 repo_name: Cooler-dev/Cooler
-docs_dir: docs_src
-site_dir: docs
-edit_uri: edit/main/docs_src/
+docs_dir: docs
+site_dir: public
+edit_uri: edit/main/docs/
 pages:
   - ['index.md', '首页']
