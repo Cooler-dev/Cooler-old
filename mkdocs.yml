@@ -4,6 +4,7 @@ theme:
   language: zh
   palette:
     primary: teal
+    accent: teal
   logo: assets/logo.svg
 repo_url: https://github.com/Cooler-dev/Cooler
 repo_name: Cooler-dev/Cooler
