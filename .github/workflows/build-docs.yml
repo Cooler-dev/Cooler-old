@@ -14,8 +14,7 @@ jobs:
       - run: pip install mkdocs-material 
       - run: pip install mkdocs
       - run: mkdocs build
-      - run: cd public
-      - run: echo "cooler.redish101.tk" >> CNAME
+      - run: echo "cooler.redish101.tk" >> public/CNAME
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
