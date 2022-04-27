@@ -1,0 +1,12 @@
+site_name: Cooler
+theme: 
+  name: material
+  language: zh
+  palette:
+    primary: teal
+  logo: assets/logo.svg
+repo_url: https://github.com/Cooler-dev/Cooler
+repo_name: Cooler-dev/Cooler
+docs_dir: docs_src
+site_dir: docs
+edit_uri: edit/main/docs_src/

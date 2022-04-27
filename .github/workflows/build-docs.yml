@@ -1,0 +1,20 @@
+name: Build Cooler docs
+
+on:
+  push:
+    path: ['docs_src']
+    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Install mkdocs
+        run: pip install mkdocs
+      -
+        name: Build
+        uses: mkdocs build
