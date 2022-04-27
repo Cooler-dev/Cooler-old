@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - docs_src
+      - docs
 jobs:
   deploy:
     runs-on: ubuntu-latest
