@@ -5,7 +5,7 @@ theme:
   palette:
     primary: teal
     accent: teal
-  logo: assets/logo.svg
+  logo: assets/images/logo.svg
 repo_url: https://github.com/Cooler-dev/Cooler
 repo_name: Cooler-dev/Cooler
 docs_dir: docs
@@ -13,3 +13,6 @@ site_dir: public
 edit_uri: edit/main/docs/
 nav :
   - 首页: index.md
+  - 主题开发文档:
+    - 使用html: devlop/theme/index.md
+    - 使用vue: devlop/theme/use-vue.md
